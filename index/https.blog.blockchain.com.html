@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Blockchain Blog</title>
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- stylesheets -->
+	<link
+		href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400%7CRoboto+Slab'
+		rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/assets/css/bootstrap.min.css?v=52aa6f2d5c">
+	<link rel="stylesheet" href="/assets/css/font-awesome.min.css?v=52aa6f2d5c">
+	<link rel="stylesheet" type="text/css" href="/assets/css/screen.css?v=52aa6f2d5c">
+	<link rel="stylesheet" type="text/css"
+		href="/assets/css/hl-styles/monokai_sublime.css?v=52aa6f2d5c">
+	<!-- only for demo -->
+	<!-- <link rel="stylesheet" type="text/css" href="/assets/demo-assets/css/colpick.css?v=52aa6f2d5c"> -->
+	<script>
+/*====================================================
+  THEME SETTINGS & GLOBAL VARIABLES
+====================================================*/
+//  1. Disqus comment settings
+var disqus_shortname = ''; // required: replace example with your forum shortname
+
+//	2. Sidebar Position
+var sidebar_left = false; // Set true or flase for positioning sidebar on left
+
+//	3. Google+ badge settings
+var badge_type = 'page'; // person / page / community ----- three type of google badge
+var google_plus_url = '';
+
+//	4. Facebook Page Setting
+var facebook_page_url = 'https://www.facebook.com/blockchain';
+
+//	5. Mailchimp signup form Setting
+var mailchimp_form_url = 'https://blockchain.us14.list-manage.com/subscribe?u=d74ffe6e610e00dc5772900bd&id=64c74545e3';
+var success_message = "Thanks for subscribing to Blockchain's blog!";
+
+//	6. Flickr Setting
+var flickr_id = '';
+</script>
+	<meta name="description" content="Thoughts, stories and ideas." />
+    <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+    <link rel="canonical" href="https://blog.blockchain.com/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="next" href="https://blog.blockchain.com/page/2/" />
+    
+    <meta property="og:site_name" content="Blockchain Blog" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Blockchain Blog" />
+    <meta property="og:description" content="Thoughts, stories and ideas." />
+    <meta property="og:url" content="https://blog.blockchain.com/" />
+    <meta property="og:image" content="https://casper.ghost.org/v1.0.0/images/blog-cover.jpg" />
+    <meta property="article:publisher" content="https://www.facebook.com/blockchain/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Blockchain Blog" />
+    <meta name="twitter:description" content="Thoughts, stories and ideas." />
+    <meta name="twitter:url" content="https://blog.blockchain.com/" />
+    <meta name="twitter:image" content="https://casper.ghost.org/v1.0.0/images/blog-cover.jpg" />
+    <meta name="twitter:site" content="@blockchain" />
+    <meta property="og:image:width" content="2000" />
+    <meta property="og:image:height" content="666" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Blockchain Blog",
+        "logo": "https://blog.blockchain.com/content/images/2018/03/logo-ghost-01.png"
+    },
+    "url": "https://blog.blockchain.com/",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://casper.ghost.org/v1.0.0/images/blog-cover.jpg",
+        "width": 2000,
+        "height": 666
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://blog.blockchain.com/"
+    },
+    "description": "Thoughts, stories and ideas."
+}
+    </script>
+
+    <script src="/public/ghost-sdk.min.js?v=52aa6f2d5c"></script>
+<script>
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "656cf1bfe795"
+});
+</script>
+    <meta name="generator" content="Ghost 2.25" />
+    <link rel="alternate" type="application/rss+xml" title="Blockchain Blog" href="https://blog.blockchain.com/rss/" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52108117-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-52108117-2');
+</script>
+</head>
+
+<body class="home-template">
+	<!-- start header -->
+<header class="main-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<!-- start logo -->
+				<a class="branding" href="https://blog.blockchain.com"><img src="/content/images/2018/03/logo-ghost-01.png" alt="Blockchain Blog"></a>
+				<!-- end logo -->
+			</div>
+		</div>
+	</div>
+</header>
+<!-- end header -->
+<!-- start navigation -->
+<nav class="main-navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="navbar-header">
+					<span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu">
+					<span class="sr-only">Toggle navigation</span>
+					<i class="fa fa-bars"></i>
+					</span>
+				</div>
+				<div class="collapse navbar-collapse" id="main-menu">
+	            		<ul class="menu">
+    <li class="nav-current">
+        <a href="https://blog.blockchain.com/">Home</a>
+    </li>
+    <li>
+        <a href="http://blockchain.com">About Blockchain</a>
+    </li>
+    <li>
+        <a href="https://support.blockchain.com/hc/en-us">Support</a>
+    </li>
+    <li>
+        <a href="http://blockchain.com/wallet/">Wallet</a>
+    </li>
+</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+<!-- end navigation -->
+	<!-- start site's main content area -->
+<html lang="en"> 
+<section class="content-wrap">
+	<div class="container">
+		<div class="row">
+			<!-- start main post area -->
+			<div class="col-md-8 main-content">
+				<!-- start post -->
+<article class="post tag-research tag-cryptoasset tag-cryptocurrency">
+	<div class="post-head">
+		<h2 class="post-title"><a href="/2019/06/25/introducing-our-crypto-investment-thesis/">Introducing our General Crypto Investment Thesis</a></h2>
+		<div class="post-meta">
+			<span class="author">By <a href="/author/blockchain/">Blockchain Team</a></span> &bull;
+			<span class="date">June 25, 2019</span>
+		</div>
+	</div>
+	<div class="featured-media">
+		<a href="/2019/06/25/introducing-our-crypto-investment-thesis/"><img src="/content/images/2019/06/Blockchain-Cryptoasset-Investment-Thesis-Header.jpeg" alt="Introducing our General Crypto Investment Thesis"></a>
+	</div>
+	<div class="post-content">
+		<p>As the most trusted cryptocurrency company, we are passionate about helping people navigate the seemingly complex world of digital assets. Today, we’re pleased to release our first “Crypto Investment Thesis”, which outlines our view on why an ever growing number of people are choosing to use and own digital</p>
+	</div>
+	<div class="post-permalink">
+		<a href="/2019/06/25/introducing-our-crypto-investment-thesis/" class="btn btn-default">Continue Reading</a>
+	</div>
+	<footer class="post-footer clearfix">
+		<div class="pull-left tag-list">
+			<i class="fa fa-folder-open-o"></i>
+			<a href="/tag/research/">research</a>,<a href="/tag/cryptoasset/">cryptoasset</a>,<a href="/tag/cryptocurrency/">cryptocurrency</a>
+		</div>
+		<div class="pull-right share">
+			<ul class="share-icons">
+	<!-- twitter -->
+	<li>
+		<a href="https://twitter.com/share?text=Introducing%20our%20General%20Crypto%20Investment%20Thesis&amp;url=https://blog.blockchain.com/2019/06/25/introducing-our-crypto-investment-thesis/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fa fa-twitter"></i></a>
+	</li>
+	<!-- facebook -->
+	<li>
+		<a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.blockchain.com/2019/06/25/introducing-our-crypto-investment-thesis/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fa fa-facebook"></i></a>
+	</li>
+	<!-- google plus -->
+	<li>
+		<a href="https://plus.google.com/share?url=https://blog.blockchain.com/2019/06/25/introducing-our-crypto-investment-thesis/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="fa fa-google-plus"></i></a>
+	</li>
+	<!-- pinterest -->
+	<li>
+		<a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><i class="fa fa-pinterest"></i></a>
+	</li>
+	<!-- linkedin -->
+	<li>
+		<a href="https://www.linkedin.com/shareArticle?mini=true%26url=https://blog.blockchain.com/2019/06/25/introducing-our-crypto-investment-thesis/%26source=https://blog.blockchain.com" onclick="window.open(this.href, 'linkedin-share', 'width=490,height=530');return false;"><i class="fa fa-linkedin"></i></a>
+	</li>
+</ul>		</div>
+	</footer>
+</article>
+<article class="post tag-blockchain-wallet tag-company-updates tag-paxos tag-stablecoins tag-swap tag-meet-the-blockchain-team tag-whats-new tag-usd-pax">
+	<div class="post-head">
+		<h2 class="post-title"><a href="/2019/06/07/blockchain-monthly-update-june/">Blockchain Monthly Update: June</a></h2>
+		<div class="post-meta">
+			<span class="author">By <a href="/author/blockchain/">Blockchain Team</a></span> &bull;
+			<span class="date">June 07, 2019</span>
+		</div>
+	</div>
+	<div class="featured-media">
+		<a href="/2019/06/07/blockchain-monthly-update-june/"><img src="/content/images/2019/06/email_generalheader.png" alt="Blockchain Monthly Update: June"></a>
+	</div>
+	<div class="post-content">
+		<p>We’ve been in constant build mode over the last year, and we want you to be among the first to know what we’ve been up to. So, we’re kicking off a new series of monthly blog updates to keep you in the loop on what’s going</p>
+	</div>
+	<div class="post-permalink">
+		<a href="/2019/06/07/blockchain-monthly-update-june/" class="btn btn-default">Continue Reading</a>
+	</div>
+	<footer class="post-footer clearfix">
+		<div class="pull-left tag-list">
+			<i class="fa fa-folder-open-o"></i>
+			<a href="/tag/blockchain-wallet/">Blockchain Wallet</a>,<a href="/tag/company-updates/">Company Updates</a>,<a href="/tag/paxos/">paxos</a>,<a href="/tag/stablecoins/">stablecoins</a>,<a href="/tag/swap/">swap</a>,<a href="/tag/meet-the-blockchain-team/">The Blockchain Team</a>,<a href="/tag/whats-new/">What&#39;s New</a>,<a href="/tag/usd-pax/">usd pax</a>
+		</div>
+		<div class="pull-right share">
+			<ul class="share-icons">
+	<!-- twitter -->
+	<li>
+		<a href="https://twitter.com/share?text=Blockchain%20Monthly%20Update%3A%20June&amp;url=https://blog.blockchain.com/2019/06/07/blockchain-monthly-update-june/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fa fa-twitter"></i></a>
+	</li>
+	<!-- facebook -->
+	<li>
+		<a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.blockchain.com/2019/06/07/blockchain-monthly-update-june/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fa fa-facebook"></i></a>
+	</li>
+	<!-- google plus -->
+	<li>
+		<a href="https://plus.google.com/share?url=https://blog.blockchain.com/2019/06/07/blockchain-monthly-update-june/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="fa fa-google-plus"></i></a>
+	</li>
+	<!-- pinterest -->
+	<li>
+		<a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><i class="fa fa-pinterest"></i></a>
+	</li>
+	<!-- linkedin -->
+	<li>
+		<a href="https://www.linkedin.com/shareArticle?mini=true%26url=https://blog.blockchain.com/2019/06/07/blockchain-monthly-update-june/%26source=https://blog.blockchain.com" onclick="window.open(this.href, 'linkedin-share', 'width=490,height=530');return false;"><i class="fa fa-linkedin"></i></a>
+	</li>
+</ul>		</div>
+	</footer>
+</article>
+<article class="post tag-crypto tag-cryptocurrency tag-stablecoins tag-cryptoasset tag-paxos tag-decentralized tag-borderless tag-noncustodial tag-blockchain-wallet tag-blockchain tag-erc20 tag-usd-pax">
+	<div class="post-head">
+		<h2 class="post-title"><a href="/2019/05/24/what-is-the-paxos-standard-a-primer-on-our-wallets-newest-cryptoasset/">What is the Paxos Standard? A Primer on Our Wallet’s Newest Cryptoasset</a></h2>
+		<div class="post-meta">
+			<span class="author">By <a href="/author/blockchain/">Blockchain Team</a></span> &bull;
+			<span class="date">May 24, 2019</span>
+		</div>
+	</div>
+	<div class="featured-media">
+		<a href="/2019/05/24/what-is-the-paxos-standard-a-primer-on-our-wallets-newest-cryptoasset/"><img src="/content/images/2019/05/paxosprimer_blog.png" alt="What is the Paxos Standard? A Primer on Our Wallet’s Newest Cryptoasset"></a>
+	</div>
+	<div class="post-content">
+		<p>Since January, we’ve been releasing digestible, institutional-grade research in the form of <a href="https://blog.blockchain.com/2019/01/23/blockchain-primers-bch/">Blockchain Primers</a> as a way for our users to stay informed about the fastest growing and most important sectors of the cryptoverse. Our latest bite-sized report is on the wallet’s newest addition and first stablecoin, USD</p>
+	</div>
+	<div class="post-permalink">
+		<a href="/2019/05/24/what-is-the-paxos-standard-a-primer-on-our-wallets-newest-cryptoasset/" class="btn btn-default">Continue Reading</a>
+	</div>
+	<footer class="post-footer clearfix">
+		<div class="pull-left tag-list">
+			<i class="fa fa-folder-open-o"></i>
+			<a href="/tag/crypto/">crypto</a>,<a href="/tag/cryptocurrency/">cryptocurrency</a>,<a href="/tag/stablecoins/">stablecoins</a>,<a href="/tag/cryptoasset/">cryptoasset</a>,<a href="/tag/paxos/">paxos</a>,<a href="/tag/decentralized/">decentralized</a>,<a href="/tag/borderless/">borderless</a>,<a href="/tag/noncustodial/">noncustodial</a>,<a href="/tag/blockchain-wallet/">Blockchain Wallet</a>,<a href="/tag/blockchain/">blockchain</a>,<a href="/tag/erc20/">ERC20</a>,<a href="/tag/usd-pax/">usd pax</a>
+		</div>
+		<div class="pull-right share">
+			<ul class="share-icons">
+	<!-- twitter -->
+	<li>
+		<a href="https://twitter.com/share?text=What%20is%20the%20Paxos%20Standard%3F%20A%20Primer%20on%20Our%20Wallet%E2%80%99s%20Newest%20Cryptoasset&amp;url=https://blog.blockchain.com/2019/05/24/what-is-the-paxos-standard-a-primer-on-our-wallets-newest-cryptoasset/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fa fa-twitter"></i></a>
+	</li>
+	<!-- facebook -->
+	<li>
+		<a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.blockchain.com/2019/05/24/what-is-the-paxos-standard-a-primer-on-our-wallets-newest-cryptoasset/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fa fa-facebook"></i></a>
+	</li>
+	<!-- google plus -->
+	<li>
+		<a href="https://plus.google.com/share?url=https://blog.blockchain.com/2019/05/24/what-is-the-paxos-standard-a-primer-on-our-wallets-newest-cryptoasset/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="fa fa-google-plus"></i></a>
+	</li>
+	<!-- pinterest -->
+	<li>
+		<a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><i class="fa fa-pinterest"></i></a>
+	</li>
+	<!-- linkedin -->
+	<li>
+		<a href="https://www.linkedin.com/shareArticle?mini=true%26url=https://blog.blockchain.com/2019/05/24/what-is-the-paxos-standard-a-primer-on-our-wallets-newest-cryptoasset/%26source=https://blog.blockchain.com" onclick="window.open(this.href, 'linkedin-share', 'width=490,height=530');return false;"><i class="fa fa-linkedin"></i></a>
+	</li>
+</ul>		</div>
+	</footer>
+</article>
+<article class="post tag-usd-pax tag-stablecoins tag-crypto tag-erc20 tag-paxos featured">
+	<div class="featured">
+		<i class="fa fa-star"></i>
+	</div>
+	<div class="post-head">
+		<h2 class="post-title"><a href="/2019/05/01/we-fixed-the-dollar-by-fixing-it-to-crypto/">We fixed the dollar, by fixing it to crypto</a></h2>
+		<div class="post-meta">
+			<span class="author">By <a href="/author/blockchain/">Blockchain Team</a></span> &bull;
+			<span class="date">May 01, 2019</span>
+		</div>
+	</div>
+	<div class="featured-media">
+		<a href="/2019/05/01/we-fixed-the-dollar-by-fixing-it-to-crypto/"><img src="/content/images/2019/05/introducing-2.png" alt="We fixed the dollar, by fixing it to crypto"></a>
+	</div>
+	<div class="post-content">
+		<p>Today, we’ve partnered with Paxos to break down a financial barrier for people across the world to access the world’s primary reserve currency with the release of digital dollars to our market-leading wallet. </p><p>The digital dollars, listed in the Blockchain Wallet as USD PAX, are powered by <a href="https://www.paxos.com/pax/">Paxos</a></p>
+	</div>
+	<div class="post-permalink">
+		<a href="/2019/05/01/we-fixed-the-dollar-by-fixing-it-to-crypto/" class="btn btn-default">Continue Reading</a>
+	</div>
+	<footer class="post-footer clearfix">
+		<div class="pull-left tag-list">
+			<i class="fa fa-folder-open-o"></i>
+			<a href="/tag/usd-pax/">usd pax</a>,<a href="/tag/stablecoins/">stablecoins</a>,<a href="/tag/crypto/">crypto</a>,<a href="/tag/erc20/">ERC20</a>,<a href="/tag/paxos/">paxos</a>
+		</div>
+		<div class="pull-right share">
+			<ul class="share-icons">
+	<!-- twitter -->
+	<li>
+		<a href="https://twitter.com/share?text=We%20fixed%20the%20dollar%2C%20by%20fixing%20it%20to%20crypto&amp;url=https://blog.blockchain.com/2019/05/01/we-fixed-the-dollar-by-fixing-it-to-crypto/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fa fa-twitter"></i></a>
+	</li>
+	<!-- facebook -->
+	<li>
+		<a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.blockchain.com/2019/05/01/we-fixed-the-dollar-by-fixing-it-to-crypto/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fa fa-facebook"></i></a>
+	</li>
+	<!-- google plus -->
+	<li>
+		<a href="https://plus.google.com/share?url=https://blog.blockchain.com/2019/05/01/we-fixed-the-dollar-by-fixing-it-to-crypto/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="fa fa-google-plus"></i></a>
+	</li>
+	<!-- pinterest -->
+	<li>
+		<a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><i class="fa fa-pinterest"></i></a>
+	</li>
+	<!-- linkedin -->
+	<li>
+		<a href="https://www.linkedin.com/shareArticle?mini=true%26url=https://blog.blockchain.com/2019/05/01/we-fixed-the-dollar-by-fixing-it-to-crypto/%26source=https://blog.blockchain.com" onclick="window.open(this.href, 'linkedin-share', 'width=490,height=530');return false;"><i class="fa fa-linkedin"></i></a>
+	</li>
+</ul>		</div>
+	</footer>
+</article>
+<article class="post tag-xlm tag-swap tag-company-updates tag-stellar">
+	<div class="post-head">
+		<h2 class="post-title"><a href="/2019/04/29/what-is-stellar-a-primer-on-our-wallets-newest-crypto-asset/">What is Stellar? A Primer on Our Wallet’s Newest Cryptoasset</a></h2>
+		<div class="post-meta">
+			<span class="author">By <a href="/author/blockchain/">Blockchain Team</a></span> &bull;
+			<span class="date">April 29, 2019</span>
+		</div>
+	</div>
+	<div class="featured-media">
+		<a href="/2019/04/29/what-is-stellar-a-primer-on-our-wallets-newest-crypto-asset/"><img src="/content/images/2019/04/xlmprimer_blog-2.png" alt="What is Stellar? A Primer on Our Wallet’s Newest Cryptoasset"></a>
+	</div>
+	<div class="post-content">
+		<p>In January, we launched a new education initiative called <a href="https://blog.blockchain.com/2019/01/23/blockchain-primers-bch/">Blockchain Primers </a>to ensure our users have the latest and most reliable information, data, and research on the cryptoasset options in their wallets (and beyond).</p><p><br>Today, we’re happy to share a primer on Stellar (XLM), which many of you have</p>
+	</div>
+	<div class="post-permalink">
+		<a href="/2019/04/29/what-is-stellar-a-primer-on-our-wallets-newest-crypto-asset/" class="btn btn-default">Continue Reading</a>
+	</div>
+	<footer class="post-footer clearfix">
+		<div class="pull-left tag-list">
+			<i class="fa fa-folder-open-o"></i>
+			<a href="/tag/xlm/">XLM</a>,<a href="/tag/swap/">swap</a>,<a href="/tag/company-updates/">Company Updates</a>,<a href="/tag/stellar/">Stellar</a>
+		</div>
+		<div class="pull-right share">
+			<ul class="share-icons">
+	<!-- twitter -->
+	<li>
+		<a href="https://twitter.com/share?text=What%20is%20Stellar%3F%20A%20Primer%20on%20Our%20Wallet%E2%80%99s%20Newest%20Cryptoasset&amp;url=https://blog.blockchain.com/2019/04/29/what-is-stellar-a-primer-on-our-wallets-newest-crypto-asset/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fa fa-twitter"></i></a>
+	</li>
+	<!-- facebook -->
+	<li>
+		<a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.blockchain.com/2019/04/29/what-is-stellar-a-primer-on-our-wallets-newest-crypto-asset/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fa fa-facebook"></i></a>
+	</li>
+	<!-- google plus -->
+	<li>
+		<a href="https://plus.google.com/share?url=https://blog.blockchain.com/2019/04/29/what-is-stellar-a-primer-on-our-wallets-newest-crypto-asset/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="fa fa-google-plus"></i></a>
+	</li>
+	<!-- pinterest -->
+	<li>
+		<a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><i class="fa fa-pinterest"></i></a>
+	</li>
+	<!-- linkedin -->
+	<li>
+		<a href="https://www.linkedin.com/shareArticle?mini=true%26url=https://blog.blockchain.com/2019/04/29/what-is-stellar-a-primer-on-our-wallets-newest-crypto-asset/%26source=https://blog.blockchain.com" onclick="window.open(this.href, 'linkedin-share', 'width=490,height=530');return false;"><i class="fa fa-linkedin"></i></a>
+	</li>
+</ul>		</div>
+	</footer>
+</article>
+<!-- end post -->				<!-- start pagination -->
+<nav class="pagination">
+	<span class="page-number">Page 1 of 106</span>
+	<a class="older-posts" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+</nav>
+<!-- end pagination -->
+			</div>
+			<!-- end main post area -->
+			<!-- start sidebar -->
+<div class="col-md-4 sidebar">
+	<!-- start widget -->
+<div class="widget">
+			<h4 class="title">Follow</h4>
+	<div class="content">
+		<ul class="social">
+			<!-- start social links -->
+			<!-- replace the # with your own profile link address -->
+			<li><a href="https://www.facebook.com/blockchain"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="https://twitter.com/blockchain"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="https://www.linkedin.com/company/3605159"><i class="fa fa-linkedin"></i></a></li>
+			<li><a href="https://www.youtube.com/channel/UCJ9zTtvIKcDLNe76CksyM9A"><i class="fa fa-youtube"></i></a></li>
+			<li><a href="https://github.com/blockchain"><i class="fa fa-github"></i></a></li>
+			<li><a href="https://blog.blockchain.com/rss/"><i class="fa fa-rss"></i></a></li>
+			<!-- end social links -->
+		</ul>
+	</div>
+</div>
+<!-- end widget -->	<!-- start tag cloud widget -->
+
+<div class="widget">
+				<h4 class="title">Newsletter</h4>
+	<div class="content newsletter">
+			<p>Subscribe to our newsletter</p>
+		<div id="mc_embed_signup">
+			<form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+				<div class="input-group">
+							<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email...">
+				</div>
+				<div class="input-group">
+					<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">
+				</div>
+			</form>
+		</div>
+		<div id="message"></div>
+	</div>
+</div>
+<!-- end tag cloud widget -->	<!-- start widget -->
+<div class="widget">
+			<h4 class="title">Recent Post</h4>
+	<div class="content recent-post">
+					<div class="recent-single-post">
+						<a href="/2019/06/25/introducing-our-crypto-investment-thesis/" class="post-title">Introducing our General Crypto Investment Thesis</a>
+						<div class="date">June 25, 2019</div>
+					</div>
+					<div class="recent-single-post">
+						<a href="/2019/06/07/blockchain-monthly-update-june/" class="post-title">Blockchain Monthly Update: June</a>
+						<div class="date">June 07, 2019</div>
+					</div>
+					<div class="recent-single-post">
+						<a href="/2019/05/24/what-is-the-paxos-standard-a-primer-on-our-wallets-newest-cryptoasset/" class="post-title">What is the Paxos Standard? A Primer on Our Wallet’s Newest Cryptoasset</a>
+						<div class="date">May 24, 2019</div>
+					</div>
+	</div>
+</div>
+<!-- end widget --></div>
+<!-- end sidebar -->		</div>
+	</div>
+</section>
+<!-- end site's main content area -->
+
+	<!-- start main-footer -->
+	<footer class="main-footer">
+		<div class="container">
+			<div class="row">
+				<!-- start first footer widget area -->
+				<div class="col-sm-4">
+					<!-- start widget -->
+<div class="widget">
+			<h4 class="title">Recent Post</h4>
+	<div class="content recent-post">
+					<div class="recent-single-post">
+						<a href="/2019/06/25/introducing-our-crypto-investment-thesis/" class="post-title">Introducing our General Crypto Investment Thesis</a>
+						<div class="date">June 25, 2019</div>
+					</div>
+					<div class="recent-single-post">
+						<a href="/2019/06/07/blockchain-monthly-update-june/" class="post-title">Blockchain Monthly Update: June</a>
+						<div class="date">June 07, 2019</div>
+					</div>
+					<div class="recent-single-post">
+						<a href="/2019/05/24/what-is-the-paxos-standard-a-primer-on-our-wallets-newest-cryptoasset/" class="post-title">What is the Paxos Standard? A Primer on Our Wallet’s Newest Cryptoasset</a>
+						<div class="date">May 24, 2019</div>
+					</div>
+	</div>
+</div>
+<!-- end widget -->				</div>
+				<!-- end first footer widget area -->
+				<!-- start second footer widget area -->
+				<div class="col-sm-4">
+					<!-- start tag cloud widget -->
+<div class="widget">
+			<h4 class="title">Newsletter</h4>
+    <div class="content newsletter">
+				<p>Subscribe to our newsletter</p>
+        <div id="footer_mc_embed_signup">
+            <form action="#" method="post" id="footer_mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                novalidate>
+                <div class="input-group">
+							<input type="email" value="" name="EMAIL" class="required email" id="footer_mce-EMAIL" placeholder="Enter your email...">
+                </div>
+                <div class="input-group">
+                    <input type="submit" value=" Subscribe " name="subscribe" id="footer_mc-embedded-subscribe" class="btn btn-default">
+                </div>
+            </form>
+        </div>
+        <div id="footer_message"></div>
+    </div>
+</div>
+<!-- end tag cloud widget -->				</div>
+				<!-- end second footer widget area -->
+				<!-- start third footer widget area -->
+				<div class="col-sm-4">
+					<!-- start widget -->
+<div class="widget">
+			<h4 class="title">Follow</h4>
+	<div class="content">
+		<ul class="social">
+			<!-- start social links -->
+			<!-- replace the # with your own profile link address -->
+			<li><a href="https://www.facebook.com/blockchain"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="https://twitter.com/blockchain"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="https://www.linkedin.com/company/3605159"><i class="fa fa-linkedin"></i></a></li>
+			<li><a href="https://www.youtube.com/channel/UCJ9zTtvIKcDLNe76CksyM9A"><i class="fa fa-youtube"></i></a></li>
+			<li><a href="https://github.com/blockchain"><i class="fa fa-github"></i></a></li>
+			<li><a href="https://blog.blockchain.com/rss/"><i class="fa fa-rss"></i></a></li>
+			<!-- end social links -->
+		</ul>
+	</div>
+</div>
+<!-- end widget -->				</div>
+				<!-- end third footer widget area -->
+			</div>
+		</div>
+	</footer>
+	<!-- end main-footer -->
+	<!-- start copyright section -->
+<div class="copyright">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				Copyright &copy; 2019, <a href="https://blog.blockchain.com">Blockchain Blog</a>.  All right Reserved.
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end copyright section -->	<a href="#" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+	
+	<!-- scripts -->
+	<script type="text/javascript">
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="/assets/js/jquery.fitvids.js?v=52aa6f2d5c"></script>
+	<script src="/assets/js/bootstrap.min.js?v=52aa6f2d5c"></script>
+	<script src="/assets/js/jflickrfeed.min.js?v=52aa6f2d5c"></script>
+	<script src="/assets/js/highlight.pack.js?v=52aa6f2d5c"></script>
+	<script src="/assets/js/main.js?v=52aa6f2d5c"></script>
+	<!-- Add your analytic code below --></body>
+</html>

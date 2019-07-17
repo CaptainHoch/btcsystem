@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Bitcoin Charts & Graphs - Blockchain</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://www.blockchain.com/Resources/overrides.min.css?1559814337">
+    <link rel="stylesheet" href="https://www.blockchain.com/Resources/css/blockchain.css?1559814337">
+
+    <script src="https://www.blockchain.com/Resources/js/jquery.min.js?1559814337" type="text/javascript"></script>
+    <script type="text/javascript" src="https://www.blockchain.com/Resources/js/bootstrap.min.js?1559814337"></script>
+    <script type="text/javascript" src="https://www.blockchain.com/Resources/js/shared.min.js?1559814337"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="https://www.blockchain.com/Resources/analytics.js?1559814337"></script>
+
+    <script type="text/javascript" src="https://www.blockchain.com/charts/assets/language.js?1559814337"></script>
+    <link rel="stylesheet" href="https://www.blockchain.com/charts/assets/charts.css?1559814337">
+
+    <link rel="alternate" hreflang="x-default" href="https://www.blockchain.com/charts">
+    <link rel="alternate" href="https://www.blockchain.com/id/charts" hreflang="id">
+    <link rel="alternate" href="https://www.blockchain.com/ms/charts" hreflang="ms">
+    <link rel="alternate" href="https://www.blockchain.com/da/charts" hreflang="da">
+    <link rel="alternate" href="https://www.blockchain.com/de/charts" hreflang="de">
+    <link rel="alternate" href="https://www.blockchain.com/en/charts" hreflang="en">
+    <link rel="alternate" href="https://www.blockchain.com/es/charts" hreflang="es">
+    <link rel="alternate" href="https://www.blockchain.com/fr/charts" hreflang="fr">
+    <link rel="alternate" href="https://www.blockchain.com/it/charts" hreflang="it">
+    <link rel="alternate" href="https://www.blockchain.com/hu/charts" hreflang="hu">
+    <link rel="alternate" href="https://www.blockchain.com/nl/charts" hreflang="nl">
+    <link rel="alternate" href="https://www.blockchain.com/no/charts" hreflang="no">
+    <link rel="alternate" href="https://www.blockchain.com/pl/charts" hreflang="pl">
+    <link rel="alternate" href="https://www.blockchain.com/pt/charts" hreflang="pt">
+    <link rel="alternate" href="https://www.blockchain.com/ro/charts" hreflang="ro">
+    <link rel="alternate" href="https://www.blockchain.com/sl/charts" hreflang="sl">
+    <link rel="alternate" href="https://www.blockchain.com/fi/charts" hreflang="fi">
+    <link rel="alternate" href="https://www.blockchain.com/sv/charts" hreflang="sv">
+    <link rel="alternate" href="https://www.blockchain.com/vi/charts" hreflang="vi">
+    <link rel="alternate" href="https://www.blockchain.com/tr/charts" hreflang="tr">
+    <link rel="alternate" href="https://www.blockchain.com/el/charts" hreflang="el">
+    <link rel="alternate" href="https://www.blockchain.com/ru/charts" hreflang="ru">
+    <link rel="alternate" href="https://www.blockchain.com/bg/charts" hreflang="bg">
+    <link rel="alternate" href="https://www.blockchain.com/hi/charts" hreflang="hi">
+    <link rel="alternate" href="https://www.blockchain.com/th/charts" hreflang="th">
+    <link rel="alternate" href="https://www.blockchain.com/zh-cn/charts" hreflang="zh-cn">
+    <link rel="alternate" href="https://www.blockchain.com/zh-tw/charts" hreflang="zh-tw">
+    <link rel="alternate" href="https://www.blockchain.com/ja/charts" hreflang="ja">
+    <link rel="alternate" href="https://www.blockchain.com/ko/charts" hreflang="ko">
+    
+
+    
+    <script type="text/javascript" src="/charts/assets/chart-index.js?1559814337"></script>
+
+    <link href="https://www.blockchain.com/charts" rel="canonical" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@Blockchain" />
+    <meta name="twitter:site" content="@Blockchain" />
+
+    <meta property="og:site_name" content="Blockchain.com" />
+    <meta property="og:rich_attachment" content="true" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="fb:profile_id" content="360193500679903" />
+
+    <meta property="og:description" content="The most trusted source for data on the bitcoin blockchain." />
+    <meta property="og:title" content="Bitcoin Charts & Graphs - Blockchain" />
+    <meta property="og:url" content="https://www.blockchain.com/charts" />
+
+
+    
+    <meta name="description" content="Explore bitcoin charts and graphs, including the market price, the number of bitcoins in circulation, mining information and more.">
+    
+
+</head>
+<body class="charts opaque-nav" data-explorer="https://www.blockchain.com" data-endpoint="https://api.blockchain.info/" data-lang="en" style="padding-bottom: 0px">
+  <nav role="navigation">
+    <ul class="igation">
+      <li>
+        <a class="bc-logo" href="https://www.blockchain.com">
+          <img src="https://www.blockchain.com/Resources/white-blockchain.svg" alt="Blockchain" />
+        </a>
+        <button class="menu-button">
+          <span></span>
+        </button>
+        <button class="search-button" type="button"></button>
+      </li>
+      <li class="with-children">
+        <a href="https://www.blockchain.com/wallet" id="wallet-link">Wallet</a>
+        <ul>
+          <li><a href="https://www.blockchain.com/wallet/#/login">Login</a></li>
+        </ul>
+      </li>
+      <li class="with-children">
+        <a href="https://www.blockchain.com">Data</a>
+        <ul>
+          <li><a href="https://www.blockchain.com/charts">Charts</a></li>
+          <li><a href="https://www.blockchain.com/stats">Stats</a></li>
+          <li><a href="https://www.blockchain.com/markets">Markets</a></li>
+        </ul>
+      </li>
+      <li class="with-children">
+        <a href="https://www.blockchain.com/api">API</a>
+        <ul>
+          <li><a href="https://www.blockchain.com/enterprise">Business</a></li>
+        </ul>
+      </li>
+      <li class="with-children">
+        <a href="https://www.blockchain.com/about">About</a>
+        <ul>
+          <li><a href="https://www.blockchain.com/team">Team</a></li>
+          <li><a href="https://www.blockchain.com/careers">Careers</a></li>
+          <li><a href="https://www.blockchain.com/press">Press</a></li>
+          <li><a href="https://blog.blockchain.com">Blog</a></li>
+        </ul>
+      </li>
+      <li class="flex-space"></li>
+      <li>
+        <form action="https://www.blockchain.com/search" class="search-form" method="GET">
+          <input class="search-bar" name="search" placeholder="block, hash, transaction, etc..." type="text" />
+        </form>
+      </li>
+      <li>
+        <a class="wallet-button" href="https://www.blockchain.com/wallet/#/signup" target="_blank">Get A Free Wallet</a>
+      </li>
+    </ul>
+  </nav>
+
+    
+<div class="page-header mvn bg-grey pt-90" style="border-style:none;">
+  <h1 class="pv-50 mvn center">
+    Blockchain Charts
+    <br>
+    <p class="f-18 em-300 mt-10 mbn container">The most trusted source for data on the bitcoin blockchain.</p>
+  </h1>
+</div>
+<div class="sticky-nav-placeholder hide">
+  <div class="container pv-25">
+    <div class="flex-row flex-between">
+      <a href="#">Placeholder</a>
+    </div>
+  </div>
+</div>
+<div class="bg-ultralight-blue hidden-xs page-navigation">
+  <div class="container pv-25">
+    <div class="flex-row flex-between">
+      <a href="#currency-statistics" class="center upper blue f-16 em-600">Currency Statistics</a>
+      <a href="#block-details" class="center upper blue f-16 em-600">Block Details</a>
+      <a href="#mining-information" class="center upper blue f-16 em-600">Mining Information</a>
+      <a href="#network-activity" class="center upper blue f-16 em-600">Network Activity</a>
+      <a href="#blockchain-wallet-activity" class="center upper blue f-16 em-600">Wallet Activity</a>
+    </div>
+  </div>
+</div>
+<div class="container container-fake">
+  <h2 class="f-28 upper center mt-70 mb-35 hidden-xs hidden-sm">Popular Stats</h2>
+
+  <div class="row">
+    <div class="col-md-3 center flex-column popular">
+      <span class="mt-10 blue f-20">Market Price (USD)</span>
+      <a href="/charts/market-price" class="flex-column center mv-50">
+        <span class="f-48">$<span id="market-price"></span></span>
+        <span>USD</span>
+      </a>
+      <span class="f-14">Average USD market price across major bitcoin exchanges.</span>
+    </div>
+    <div class="col-md-3 center flex-column popular">
+      <span class="mt-10 blue f-20">Average Block Size</span>
+      <a href="/charts/avg-block-size" class="flex-column center mv-50">
+        <span class="f-48" id="block-size"></span>
+        <span>Megabytes</span>
+      </a>
+      <span class="f-14">The 24 hour average block size in MB.</span>
+    </div>
+    <div class="col-md-3 center flex-column popular">
+      <!-- Needs Translation --><span class="mt-10 blue f-20">Transactions per Day</span><!-- Needs Translation -->
+      <a href="/charts/n-transactions" class="flex-column center mv-50">
+        <span class="f-48" id="tx-per-day"></span>
+        <span>Transactions</span>
+      </a>
+      <span class="f-14">The aggregate number of confirmed Bitcoin transactions in the past 24 hours.</span>
+    </div>
+      <div class="col-md-3 center flex-column popular">
+      <span class="mt-10 blue f-20">Mempool Size</span>
+      <a href="/charts/mempool-size" class="flex-column center mv-50">
+        <span class="f-48" id="mempool-size"></span>
+        <span>Bytes</span>
+      </a>
+      <span class="f-14">The aggregate size of transactions waiting to be confirmed.</span>
+    </div>
+  </div>
+  <div class="center mv-40">
+  </div>
+</div>
+<div class="bg-grey charts-container" id="currency-statistics">
+  <div class="container pv-50">
+    <h3 class="center mb-30 mtn upper flex-center flex-between">Currency statistics  <i class="icon-down_arrow visible-xs blue pointer"></i></h3>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/total-bitcoins">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Bitcoins in circulation</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/total-bitcoins.png" style="width: 80%;" class="mt-10" alt="The total number of bitcoins that have already been mined.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The total number of bitcoins that have already been mined.</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/market-price">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Market Price (USD)</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/market-price.png" style="width: 80%;" class="mt-10" alt="Average USD market price across major bitcoin exchanges.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">Average USD market price across major bitcoin exchanges.</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/market-cap">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Market Capitalization</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/market-cap.png" style="width: 80%;" class="mt-10" alt="The total USD value of bitcoin supply in circulation.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The total USD value of bitcoin supply in circulation.</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/trade-volume">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">USD Exchange Trade Volume</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/trade-volume.png" style="width: 80%;" class="mt-10" alt="The total USD value of trading volume on major bitcoin exchanges.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The total USD value of trading volume on major bitcoin exchanges.</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="charts-container" id="block-details">
+  <div class="container pv-50">
+    <h3 class="center mb-30 mtn upper flex-center flex-between">Block details  <i class="icon-down_arrow visible-xs blue pointer"></i></h3>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/blocks-size">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Blockchain Size</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/blocks-size.png" style="width: 80%;" class="mt-10" alt="The total size of all block headers and transactions.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The total size of all block headers and transactions.</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/avg-block-size">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Average Block Size</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/avg-block-size.png" style="width: 80%;" class="mt-10" alt="The average block size in MB.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The average block size in MB.</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/n-transactions-per-block">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Transactions per Block</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/n-transactions-per-block.png" style="width: 80%;" class="mt-10" alt="The average number of transactions per block.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The average number of transactions per block.</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/median-confirmation-time">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Median Transaction Confirmation Time (with fee)</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/median-confirmation-time.png" style="width: 80%;" class="mt-10" alt="The median time for a transaction to be accepted into a mined block.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The median time for a transaction to be accepted into a mined block.</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-grey charts-container" id="mining-information">
+  <div class="container pv-50">
+    <h3 class="center mb-30 mtn upper flex-center flex-between">Mining information  <i class="icon-down_arrow visible-xs blue pointer"></i></h3>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/hash-rate">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Hash Rate</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/hash-rate.png" style="width: 80%;" class="mt-10" alt="The estimated number of tera hashes per second the Bitcoin network is performing.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The estimated number of tera hashes per second the Bitcoin network is performing.</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/pools">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Hashrate Distribution</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/pools.png" style="width: 80%;" class="mt-10" alt="An estimation of hashrate distribution amongst the largest mining pools">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">An estimation of hashrate distribution amongst the largest mining pools</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/difficulty">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Difficulty</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/difficulty.png" style="width: 80%;" class="mt-10" alt="A relative measure of how difficult it is to find a new block.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">A relative measure of how difficult it is to find a new block.</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/miners-revenue">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Mining Revenue</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/miners-revenue.png" style="width: 80%;" class="mt-10" alt="Total value of coinbase block rewards and transaction fees paid to miners.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">Total value of coinbase block rewards and transaction fees paid to miners.</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/transaction-fees">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Total Transaction Fees (BTC)</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/transaction-fees.png" style="width: 80%;" class="mt-10" alt="The total value of all transaction fees paid to miners (not including the coinbase value of block rewards).">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The total value of all transaction fees paid to miners.</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/transaction-fees-usd">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Total Transaction Fees (USD)</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/transaction-fees-usd.png" style="width: 80%;" class="mt-10" alt="The total value of all transaction fees paid to miners (not including the coinbase value of block rewards).">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The total value of all transaction fees paid to miners (not including the coinbase value of block rewards).</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/cost-per-transaction-percent">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Cost % of Transaction Volume</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/cost-per-transaction-percent.png" style="width: 80%;" class="mt-10" alt="A chart showing miners revenue as percentage of the transaction volume.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">A chart showing miners revenue as percentage of the transaction volume.</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/cost-per-transaction">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Cost per Transaction</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/cost-per-transaction.png" style="width: 80%;" class="mt-10" alt="A chart showing miners revenue divided by the number of transactions.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">A chart showing miners revenue divided by the number of transactions.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="charts-container" id="network-activity">
+  <div class="container pv-50">
+    <h3 class="center mb-30 mtn upper flex-center flex-between">Network activity  <i class="icon-down_arrow visible-xs blue pointer"></i></h3>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/n-unique-addresses">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Unique Addresses</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/n-unique-addresses.png" style="width: 80%;" class="mt-10" alt="The total number of unique addresses used on the Bitcoin blockchain.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The total number of unique addresses used on the Bitcoin blockchain.</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/n-transactions">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Total Number of Transactions Per Day</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/n-transactions.png" style="width: 80%;" class="mt-10" alt="The number of daily confirmed Bitcoin transactions.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The number of daily confirmed Bitcoin transactions.</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/n-transactions-total">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Total Number of Transactions</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/n-transactions-total.png" style="width: 80%;" class="mt-10" alt="Total number of transactions.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">Total number of transactions.</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/transactions-per-second">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Transactions Rate</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/transactions-per-second.png" style="width: 80%;" class="mt-10" alt="The number of Bitcoin transactions added to the mempool per second.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The number of Bitcoin transactions added to the mempool per second.</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/mempool-count">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Mempool Transaction Count</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/mempool-count.png" style="width: 80%;" class="mt-10" alt="The number of transactions waiting to be confirmed.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The number of transactions waiting to be confirmed.</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/mempool-growth">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Mempool Size Growth</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/mempool-growth.png" style="width: 80%;" class="mt-10" alt="The rate at which the mempool is growing per second.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The rate at which the mempool is growing per second.</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/mempool-size">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Mempool Size</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/mempool-size.png" style="width: 80%;" class="mt-10" alt="The aggregate size of transactions waiting to be confirmed.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The aggregate size of transactions waiting to be confirmed.</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/mempool-state-by-fee-level">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Mempool State By Fee Level</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/mempool-state-by-fee-level.png" style="width: 80%;" class="mt-10" alt="Mempool State By Fee Level">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">Breakdown of the mempool by fee level</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/utxo-count">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Number of Unspent Transactions Outputs</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/utxo-count.png" style="width: 80%;" class="mt-10" alt="The number of unspent Bitcoin transactions outputs (UTXO set size).">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The number of unspent Bitcoin transactions outputs (UTXO set size).</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/n-transactions-excluding-popular">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Transaction Volume excluding Popular Addresses</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/n-transactions-excluding-popular.png" style="width: 80%;" class="mt-10" alt="The total number of Bitcoin transactions, excluding the 100 most popular addresses.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The total number of Bitcoin transactions, excluding the 100 most popular addresses.</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/n-transactions-excluding-chains-longer-than-100">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Transaction Volume excluding Long Chains</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/n-transactions-excluding-chains-longer-than-100.png" style="width: 80%;" class="mt-10" alt="The total number of Bitcoin transactions per day excluding long transaction chains.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The total number of Bitcoin transactions per day excluding long transaction chains.</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/output-volume">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Total Output Value</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/output-volume.png" style="width: 80%;" class="mt-10" alt="The total value of all transaction outputs per day.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The total value of all transaction outputs per day.</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/estimated-transaction-volume">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Estimated Transaction Value</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/estimated-transaction-volume.png" style="width: 80%;" class="mt-10" alt="The total estimated value of transactions on the Bitcoin blockchain.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The total estimated value of transactions on the Bitcoin blockchain.</div>
+      </div>
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/estimated-transaction-volume-usd">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Estimated USD Transaction Value</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/estimated-transaction-volume-usd.png" style="width: 80%;" class="mt-10" alt="The estimated transaction value in USD value.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The estimated transaction value in USD value.</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-grey charts-container" id="blockchain-wallet-activity">
+  <div class="container pv-50">
+    <h3 class="center mb-30 mtn upper flex-center flex-between">Blockchain Wallet Activity  <i class="icon-down_arrow visible-xs blue pointer"></i></h3>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 center">
+        <a href="/charts/my-wallet-n-users">
+          <div class="border bg-white pv-10">
+            <span class="f-16 chart-title blue ph-10">Blockchain Wallet Users</span>
+            <img src="https://api.blockchain.info/charts/thumbnail/my-wallet-n-users.png" style="width: 80%;" class="mt-10" alt="The total number of Blockchain wallets created.">
+          </div>
+        </a>
+        <div class="mt-10 chart-desc">The total number of Blockchain wallets created.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer>
+    <div class="flex-container">
+      <div class="footer-logo">
+        <img alt="Blockchain Logo" src="https://www.blockchain.com/Resources/bc-name-and-logo-dark-blue.svg">
+      </div>
+      <div>
+        <h6>Products</h6>
+        <ol>
+          <li><a href="https://www.blockchain.com/wallet">Wallet</a></li>
+          <li><a href="https://www.blockchain.com/api">API</a></li>
+          <li><a href="https://www.blockchain.com/enterprise" target="_blank">Business</a></li>
+          <li><a href="https://www.blockchain.com/thunder" target="_blank">Thunder</a></li>
+          <li><a href="https://www.blockchain.com/research" target="_blank">Research</a></li>
+          <li><a href="https://www.blockchain.com">Explorer</a></li>
+          <li><a href="https://www.blockchain.com/charts">Charts</a></li>
+          <li><a href="https://www.blockchain.com/markets">Markets</a></li>
+          <li><a href="https://www.blockchain.com/stats">Stats</a></li>
+        </ol>
+      </div>
+      <div>
+        <h6>Company</h6>
+        <ol>
+          <li><a href="https://www.blockchain.com/about" target="_blank">About</a></li>
+          <li><a href="https://www.blockchain.com/team" target="_blank">Team</a></li>
+          <li><a href="https://www.blockchain.com/careers" target="_blank">Careers</a></li>
+          <li><a href="https://www.blockchain.com/interview" target="_blank">Interviewing</a></li>
+          <li><a href="https://www.blockchain.com/faq" target="_blank">FAQ</a></li>
+          <li><a href="https://www.blockchain.com/press" target="_blank">Press</a></li>
+          <li><a href="https://blog.blockchain.com" target="_blank">Blog</a></li>
+        </ol>
+      </div>
+      <div>
+        <h6>Support</h6>
+        <ol>
+          <li><a href="https://support.blockchain.com" target="_blank">Help Center</a></li>
+          <li><a href="https://blog.blockchain.com/category/tutorials-and-guides/" target="_blank">Tutorials</a></li>
+          <li><a href="https://www.blockchain.com/wallet/bitcoin-faq">Learning Portal</a></li>
+          <li><a href="https://www.blockchain-status.com" target="_blank">Status</a></li>
+        </ol>
+      </div>
+      <div>
+        <div class="dropup">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <span class="upper blue f-12">English</span>
+            <i class="icon-down_arrow blue f-8"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right languages_select" id="languages_select" style="min-width:20px">
+            <li><a tabindex="-1" href="https://www.blockchain.com/id/charts" data-code="id" title="Indonesian"><span>Bahasa Indonesia</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/ms/charts" data-code="ms" title="Malay"><span>Bahasa Melayu</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/da/charts" data-code="da" title="Danish"><span>Dansk</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/de/charts" data-code="de" title="German"><span>Deutsch</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/en/charts" data-code="en" title="English"><span>English</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/es/charts" data-code="es" title="Spanish"><span>Español</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/fr/charts" data-code="fr" title="French"><span>Français</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/it/charts" data-code="it" title="Italian"><span>Italiano</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/hu/charts" data-code="hu" title="Hungarian"><span>Magyar</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/nl/charts" data-code="nl" title="Dutch"><span>Nederlands</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/no/charts" data-code="no" title="Norwegian"><span>Norsk</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/pl/charts" data-code="pl" title="Polish"><span>Polski</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/pt/charts" data-code="pt" title="Portuguese"><span>Português</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/ro/charts" data-code="ro" title="Romanian"><span>Română</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/sl/charts" data-code="sl" title="Slovenian"><span>Slovenščina</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/fi/charts" data-code="fi" title="Finnish"><span>Suomi</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/sv/charts" data-code="sv" title="Swedish"><span>Svenska</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/vi/charts" data-code="vi" title="Vietnam"><span>Tiếng</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/tr/charts" data-code="tr" title="Turkish"><span>Türkçe</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/el/charts" data-code="el" title="Greek"><span>Ελληνικά</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/ru/charts" data-code="ru" title="Russian"><span>Русский</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/bg/charts" data-code="bg" title="Bulgarian"><span>български език</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/hi/charts" data-code="hi" title="Hindi"><span>हिन्दी</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/th/charts" data-code="th" title="Thai"><span>ภาษาไทย</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/zh-cn/charts" data-code="zh-cn" title="Chinese"><span>中文(简体)</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/zh-tw/charts" data-code="zh-tw" title="Chinese"><span>中文(繁體)</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/ja/charts" data-code="ja" title="Japanese"><span>日本語</span></a></li>
+            <li><a tabindex="-1" href="https://www.blockchain.com/ko/charts" data-code="ko" title="Korean"><span>한국어</span></a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="copyright">
+        <span>&copy;&nbsp;2017 Blockchain Luxembourg S.A. All Rights Reserved.</span>
+        <a href="https://blockchain.com/privacy" target="_blank">Privacy</a>
+        <a href="https://blockchain.com/terms" target="_blank">Terms</a>
+        <a href="https://blockchain.com/legal" rel="noopener noreferrer" target="_blank">Law Enforcement Guide</a>
+        <a href="https://www.blockchain.com/advertise" rel="noopener noreferrer">Advertise</a>
+      </div>
+      <div class="social-media">
+        <a href="https://play.google.com/store/apps/details?id=piuk.blockchain.android&hl=en" target="_blank" rel="noreferrer nofollow">
+          <img src="https://www.blockchain.com/Resources/android-footer-logo.svg" alt="Android App Icon">
+        </a>
+        <a href="https://itunes.apple.com/us/app/blockchain-bitcoin-wallet/id493253309?mt=8" target="_blank" rel="noreferrer nofollow">
+          <img src="https://www.blockchain.com/Resources/apple-footer-logo.svg" alt="iOS App Icon">
+        </a>
+        <a href="https://twitter.com/blockchain" target="_blank" rel="noreferrer nofollow">
+          <img src="https://www.blockchain.com/Resources/twitter-footer-logo.svg" alt="Twitter Icon">
+        </a>
+        <a href="https://www.linkedin.com/company/blockchain" target="_blank" rel="noreferrer nofollow">
+          <img src="https://www.blockchain.com/Resources/linkedin-footer-logo.svg" alt="LinkedIn Icon">
+        </a>
+        <a href="https://www.facebook.com/blockchain/" target="_blank" rel="noreferrer nofollow">
+          <img src="https://www.blockchain.com/Resources/facebook-footer-logo.svg" alt="Facebook Icon">
+        </a>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>
