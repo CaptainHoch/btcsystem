@@ -58,17 +58,17 @@ def printnode(n):
 
 
 def generate_info(key, g):
-    inc_m = random() * 100
-    out_m = random() * inc_m
+    # inc_m = random() * 100
+    # out_m = random() * inc_m
     basic = {
-        'Alias': 'No Alias',
+        'Alias': '', # 'No Alias',
         'Address': str(key),
-        'Sent': str(out_m) + ' BTC',
-        'Received': str(inc_m - out_m) + ' BTC',
-        'Balance': str(inc_m - out_m) + ' BTC',
-        'Transactions': str(int(random() * 1000)),
-        'Avg. In Transaction': str(random()) + ' BTC',
-        'Avg. Out Transaction': str(random() * 2) + ' BTC'
+        'Sent': '', # str(out_m) + ' BTC',
+        'Received': '', # str(inc_m - out_m) + ' BTC',
+        'Balance': '', # str(inc_m - out_m) + ' BTC',
+        'Transactions': '', # str(int(random() * 1000)),
+        'Avg. In Transaction': '', # str(random()) + ' BTC',
+        'Avg. Out Transaction': '' # str(random() * 2) + ' BTC'
     }
     inp = g.predecessors(key)
     if inp:
@@ -122,13 +122,13 @@ def generate_info(key, g):
         final_o_dig, other_ol = None, None
     diagrams = {'incoming money': (final_o_dig, other_ol), 'outgoing money': (final_i_dig, other_il)}
     advanced = {
-        'In-Degree': int(random() * 100),
-        'Out-Degree': int(random() * 100),
-        'Unique In-Degree': int(random() * 10),
-        'Unique Out-Degree': int(random() * 10),
-        'Stdev. In Transaction': str(random()),
-        'Stdev. Out Transaction': str(random()),
-        'Local Clustering Coefficient': random()
+        'In-Degree': '', # int(random() * 100),
+        'Out-Degree': '', # int(random() * 100),
+        'Unique In-Degree': '', # int(random() * 10),
+        'Unique Out-Degree': '', # int(random() * 10),
+        'Stdev. In Transaction': '', # str(random()),
+        'Stdev. Out Transaction': '', # str(random()),
+        'Local Clustering Coefficient': '' # random()
     }
     anomaly = random() * 100
     return {'basic': basic, DIAGRAMS: diagrams, 'advanced': advanced, 'anomaly': anomaly}
@@ -160,7 +160,7 @@ class Drawer(ShapesDrawer):
 
         self.g = self.win.g
         max_node = self.first_center
-        self.g = self.g.subgraph(list(self.g)[:30] + [max_node])
+        self.g = self.g.subgraph(list(self.g) + [max_node])
         self.nodeInfo = {}
         for k in self.g.nodes:
             self.nodeInfo[k] = generate_info(k, self.g)
